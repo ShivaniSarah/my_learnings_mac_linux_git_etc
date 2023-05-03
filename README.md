@@ -127,6 +127,24 @@ For example, if you want to set PATH for Python 3.6, you’d run:
 >export PATH=$PATH:/Users/shivaniagrawal/Downloads/opencv-3.4/build/bin/
  
 >opencv_createsamples
+
+>Usage: opencv_createsamples
+  [-info <collection_file_name>]
+  [-img <image_file_name>]
+  [-vec <vec_file_name>]
+  [-bg <background_file_name>]
+  [-num <number_of_samples = 1000>]
+  [-bgcolor <background_color = 0>]
+  [-inv] [-randinv] [-bgthresh <background_color_threshold = 80>]
+  [-maxidev <max_intensity_deviation = 40>]
+  [-maxxangle <max_x_rotation_angle = 1.100000>]
+  [-maxyangle <max_y_rotation_angle = 1.100000>]
+  [-maxzangle <max_z_rotation_angle = 0.500000>]
+  [-show [<scale = 4.000000>]]
+  [-w <sample_width = 24>]
+  [-h <sample_height = 24>]
+  [-maxscale <max sample scale = -1.000000>]
+  [-rngseed <rng seed = 12345>]
  
  Usage: opencv_createsamples
  
