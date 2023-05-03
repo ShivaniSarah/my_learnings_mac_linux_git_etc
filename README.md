@@ -146,16 +146,6 @@ For example, if you want to set PATH for Python 3.6, you’d run:
   [-maxscale <max sample scale = -1.000000>]
   [-rngseed <rng seed = 12345>]
  
- Usage: opencv_createsamples
- 
-  [-info <collection_file_name>]
- 
-  [-img <image_file_name>]
- 
-  [-vec <vec_file_name>]
- 
-  [-bg <background_file_name>]
- 
    ....................
  
 >echo $PATH 
