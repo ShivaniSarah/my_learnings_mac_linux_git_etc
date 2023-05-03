@@ -124,7 +124,25 @@ export PATH=$PATH:absolute/path/to/program/
 
 For example, if you want to set PATH for Python 3.6, you’d run:
 
-export PATH=$PATH:/Library/Frameworks/Python.framework/Versions/3.6/bin
+>export PATH=$PATH:/Users/shivaniagrawal/Downloads/opencv-3.4/build/bin/
+ 
+>opencv_createsamples
+ 
+ Usage: opencv_createsamples
+ 
+  [-info <collection_file_name>]
+ 
+  [-img <image_file_name>]
+ 
+  [-vec <vec_file_name>]
+ 
+  [-bg <background_file_name>]
+ 
+   ....................
+ 
+>echo $PATH 
+ /opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/shivaniagrawal/Library/Python/3.8/bin/
+ 
  
 https://techpp.com/2021/09/08/set-path-variable-in-macos-guide/
  
