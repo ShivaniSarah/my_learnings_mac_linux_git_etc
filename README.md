@@ -80,5 +80,52 @@ git push -f origin testbranch
 git branch -m renamed_branch ( rename the current branch )
  
 
+#Add to path on mac os:
+ 
+ Basically, what this means is that instead of running your command like this:
 
+/path/to/program/script.sh
 
+you can simply use the following:
+
+script.sh
+
+inside any directory on the file system.
+ 
+
+In the process of setting up a new Mac, I installed node.js.  After the node.js installer finished, it recommended to add /usr/local/share/npm/bin to my path.  It turns out there is a very neat way to do this in OS X, the /etc/paths file!  The file contains a list (one per line) of paths that are added to the $PATH variable in the shell. Here are some quick directions to add to the path:
+
+Open up Terminal.
+ 
+Run the following command:
+
+sudo nano /etc/paths
+
+Enter your password, when prompted.
+ 
+Go to the bottom of the file, and enter the path you wish to add.
+ 
+Hit control-x to quit.
+ 
+Enter “Y” to save the modified buffer.
+ 
+That’s it!  To test it, in new terminal window, type:
+ 
+echo $PATH
+
+https://www.architectryan.com/2012/10/02/add-to-the-path-on-mac-os-x-mountain-lion/
+ 
+ 
+#### Setting the PATH Variable Temporarily
+ 
+Once you’ve identified the current PATH entries, you can now set the PATH for any program. If you want to use/execute a program via terminal only in your current session, you can set its path temporarily using the following command:
+
+export PATH=$PATH:absolute/path/to/program/
+
+For example, if you want to set PATH for Python 3.6, you’d run:
+
+export PATH=$PATH:/Library/Frameworks/Python.framework/Versions/3.6/bin
+ 
+https://techpp.com/2021/09/08/set-path-variable-in-macos-guide/
+ 
+ 
