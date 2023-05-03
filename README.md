@@ -20,6 +20,19 @@ ls
 
 there you will find the binaries of opencv_createsamples, opencv_traincascade etc.
 
+# Got segmentation fault after creating binaries/object files/executables for opencv_createsamples
+
+https://answers.opencv.org/question/186134/segmentation-fault-using-opencv_createsamples/
+
+in apps/createsamples/utility.cpp commenting out this line (line 552 in opencv 3.4.4) worked for me
+
+after commenting out that line then "make" opencv again it should scan past everything else and just make createsamples
+
+static int icvStartSampleDistortion( const char* imgfilename, int bgcolor, int bgthreshold,
+                              CvSampleDistortionData* data )
+{
+//    memset( data, 0, sizeof( *data ) );
+Can't take credit, my son saw it right off the bat looking at the code. Best thing ever for a dad, seeing you kids becoming better than you are.
 
 # My Git commands
 
