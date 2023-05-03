@@ -16,15 +16,20 @@ make
 
 cd bin
 
+ls
+
+there you will find the binaries of opencv_createsamples, opencv_traincascade etc.
+
+
 # My Git commands
 
-Personal Token----> 412cf75d0e34759fe599c8592756b414b035743b
+Personal Token (PAT)----> 412cf75d0e34759fe599c8592756b414b035743b , for eg
 
-https://git.daimler.com/nbx/nbx-dataquality-package
+https://git.<organization>.com/<path to repo>
 
-https://git.daimler.com/nbx/nbx-dataquality-package.git
+https://git.<organization>.com/<path to repo>.git
 
-git push https://shagraw:412cf75d0e34759fe599c8592756b414b035743b@git.daimler.com/nbx/DataQuality-Dash.git --all
+git push https://<username>:<PAT>@git.<organization>.com/<path to repo>.git --all
 
 git fetch --all
 
