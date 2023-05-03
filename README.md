@@ -80,7 +80,7 @@ git push -f origin testbranch
 git branch -m renamed_branch ( rename the current branch )
  
 
-#Add to path on mac os:
+# Add to path on mac os:
  
  Basically, what this means is that instead of running your command like this:
 
