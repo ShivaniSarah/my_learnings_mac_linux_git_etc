@@ -56,6 +56,8 @@ git status
 
 git branch
 
+git clone --single-branch --branch 3.4 https://github.com/opencv/opencv.git
+  
 git commit -m 'your message'
 
 git remote add origin 'your_url_name'
